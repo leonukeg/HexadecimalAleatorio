@@ -1,7 +1,11 @@
+const spanHexa = document.getElementById('hexa')
+
+
 function aleatorio(min, max){
     let aleatorio = (Math.floor(Math.random() * (max - min + 1) + min))
    
     return aleatorio
+    
 }
 
 function generarletra(){
@@ -9,6 +13,7 @@ function generarletra(){
     let numero = aleatorio(0,15)
 
     return letras[numero]
+    
 }
 
 function numHex(){
@@ -19,5 +24,8 @@ function numHex(){
 
     return num
 }
+    
+    spanHexa.innerHTML = numHex()
+     
 
 
